@@ -14,6 +14,6 @@ cursor.executemany('INSERT INTO Alumnos (id, nombre, apellido) VALUES (?,?,?)', 
 
 # Guardar cambios y cerrar
 conn.commit()
-conn.close()
+conn.close() 
  
 
