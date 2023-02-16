@@ -9,11 +9,12 @@ cursor = conn.cursor()
 cursor.execute('CREATE TABLE Alumnos (id INTEGER, nombre TEXT, apellido TEXT)')
 
 # Insertar Datos en la tabla
-lista = [ (12, 'Cristofer', 'Azaña'), (2, 'Fernando', 'Cherre'), (29, 'Kevin', 'Salinas')]
+lista = [ (12, 'Cristofer Azaña', 'Azaña'), (2, 'Fernando', 'Cherre'), (29, 'Kevin', 'Salinas')]
 cursor.executemany('INSERT INTO Alumnos (id, nombre, apellido) VALUES (?,?,?)', lista)
 
 # Guardar cambios y cerrar
-conn.commit()
+conn.commit()                   
 conn.close()  
+# Oe PUTMADRE odio Git 
  
 
